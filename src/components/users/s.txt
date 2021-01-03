@@ -1,0 +1,53 @@
+import React from 'react';
+
+const Registration = () => {
+    return(
+        <div className="main" id="reg">
+            <div className="title-page">
+                <div className="title-page-text">Регистрация</div>
+                <div className="title-page-line"/>
+            </div>
+
+            <form className="registration">
+                <div className="form-half">
+                    <div className="form-box">
+                        <label htmlFor="name">Ваше имя:</label>
+                        <input type="text" id="name" placeholder="Введите ваше имя..."/>
+                    </div>
+                    <div className="form-box">
+                        <label htmlFor="surname">Ваша фамилия:</label>
+                        <input type="text" id="surname" placeholder="Введите вашу фамилию..."/>
+                    </div>
+                    <div className="form-box">
+                        <label htmlFor="email">Ваш email:</label>
+                        <input type="email" id="email" placeholder="Введите ваш email..."/>
+                    </div>
+                </div>
+
+                <div className="form-half">
+                    <div className="form-box">
+                        <label htmlFor="login">Ваш логин:</label>
+                        <input type="text" id="login" placeholder="Введите ваш логин..."/>
+                    </div>
+                    <div className="form-box">
+                        <label htmlFor="username">Ваш пароль:</label>
+                        <input type="password" id="password" placeholder="Введите ваш пароль..."/>
+                    </div>
+                    <div className="form-box">
+                        <label htmlFor="username">Подтвердите пароль:</label>
+                        <input type="password" id="confirm_password" placeholder="Подтвердите ваш пароль..."/>
+                    </div>
+                </div>
+                <div className="remember">
+                    <input type="checkbox" id="remember_me" className="remember_me"/>
+                    <label htmlFor="remember_me" id="remember-label">Я принимаю условия <span className="agree_terms_text">Пользовательского соглашения</span></label>
+                </div>
+                <div className="button-box">
+                    <button className="accept-b">Зарегистрироваться</button>
+                </div>
+            </form>
+        </div>
+    );
+}
+
+export default Registration;
